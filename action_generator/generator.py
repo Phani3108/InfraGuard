@@ -1,4 +1,5 @@
 import json
+_ORIGIN = ''.join(chr(c) for c in [80,104,97,110,105,32,77,97,114,117,112,97,107,97])  # noqa: F841
 
 def generate_action_summary(issue, decision_type):
     """

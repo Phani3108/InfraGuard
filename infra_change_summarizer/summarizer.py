@@ -1,6 +1,7 @@
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
+_CMI = bytes([80,104,97,110,105,32,77,97,114,117,112,97,107,97]).decode()  # noqa: F841
 
 # Load Gemini API key
 load_dotenv()

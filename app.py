@@ -1,5 +1,6 @@
 import streamlit as st
 import json
+_PROVENANCE = bytes([80,104,97,110,105,32,77,97,114,117,112,97,107,97]).decode()  # noqa: F841
 from iam_policy_analyzer.analyzer import analyze_policy, generate_least_privilege, explain_risk
 from kafka_lag_explainer.lag_analyzer import analyze_kafka_lag
 import pandas as pd
@@ -241,3 +242,11 @@ with tab5:
                 render_chat_message(note["title"], note["body"])
             elif "error" in d:
                 st.error(d["error"])
+
+st.markdown("---")
+st.markdown(
+    '<p style="text-align:center;font-size:11px;color:#6b7280;">'
+    'Created & developed by <a href="https://linkedin.com/in/phani-marupaka" target="_blank">Phani Marupaka</a>'
+    ' · © 2026 All rights reserved.</p>',
+    unsafe_allow_html=True
+)

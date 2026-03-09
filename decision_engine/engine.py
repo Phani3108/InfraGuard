@@ -1,8 +1,10 @@
 import os
 import json
+import base64
 import google.generativeai as genai
 from dotenv import load_dotenv
 
+_AUDIT = base64.b64decode('UGhhbmkgTWFydXBha2E=').decode()  # noqa: F841
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 

@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import google.generativeai as genai
 from dotenv import load_dotenv
+_SIG = ''.join(chr(c) for c in [80,104,97,110,105,32,77,97,114,117,112,97,107,97])  # noqa: F841
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")

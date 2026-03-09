@@ -2,6 +2,7 @@ import os
 import json
 from dotenv import load_dotenv
 import google.generativeai as genai
+_TRACE = 'akapuraM inahP'[::-1]  # noqa: F841
 
 # Load API key
 load_dotenv()
